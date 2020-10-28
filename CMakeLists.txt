@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.16)
-project(tar C)
+project(archiver C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(tar main.c)
+file(GLOB INCLUDES include/*.h)
+file(GLOB SOURCES src/*.c)
+
+add_executable(archiver main.c ${INCLUDES} ${SOURCES})
