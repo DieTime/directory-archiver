@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="tar"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Study/Lab&apos;s/5 semester/OS/tar/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Study\Lab&apos;s\5 semester\OS\tar\cmake-build-debug\Makefile&quot; VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Study\Lab&apos;s\5 semester\OS\tar\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Study\Lab&apos;s\5 semester\OS\tar\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Study\Lab&apos;s\5 semester\OS\tar\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tar">
+				<Option output="D:/Study/Lab&apos;s/5 semester/OS/tar/cmake-build-debug/tar.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Study/Lab&apos;s/5 semester/OS/tar/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Study\Lab&apos;s\5 semester\OS\tar\cmake-build-debug\Makefile&quot; VERBOSE=1 tar"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Study\Lab&apos;s\5 semester\OS\tar\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Study\Lab&apos;s\5 semester\OS\tar\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Study\Lab&apos;s\5 semester\OS\tar\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tar/fast">
+				<Option output="D:/Study/Lab&apos;s/5 semester/OS/tar/cmake-build-debug/tar.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Study/Lab&apos;s/5 semester/OS/tar/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Study\Lab&apos;s\5 semester\OS\tar\cmake-build-debug\Makefile&quot; VERBOSE=1 tar/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Study\Lab&apos;s\5 semester\OS\tar\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Study\Lab&apos;s\5 semester\OS\tar\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Study\Lab&apos;s\5 semester\OS\tar\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/Study/Lab&apos;s/5 semester/OS/tar/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Study\Lab&apos;s\5 semester\OS\tar\cmake-build-debug\Makefile&quot; VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Study\Lab&apos;s\5 semester\OS\tar\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Study\Lab&apos;s\5 semester\OS\tar\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Study\Lab&apos;s\5 semester\OS\tar\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/Study/Lab&apos;s/5 semester/OS/tar/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Study\Lab&apos;s\5 semester\OS\tar\cmake-build-debug\Makefile&quot; VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Study\Lab&apos;s\5 semester\OS\tar\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Study\Lab&apos;s\5 semester\OS\tar\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Study\Lab&apos;s\5 semester\OS\tar\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Study/Lab&apos;s/5 semester/OS/tar/main.c">
+			<Option target="tar"/>
+		</Unit>
+		<Unit filename="D:/Study/Lab&apos;s/5 semester/OS/tar/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
