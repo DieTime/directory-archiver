@@ -6,35 +6,35 @@
 
 int main(int argc, char** argv) {
     // Getting arguments
-    char* flag = argv[1];
-    char* path = argv[2];
+    char* action = argv[1];
+    char* source = argv[2];
     char* output = argv[3];
 
     // Checking the number of arguments
     if (argc != 4) {
-        printf("[ERROR] Archiver takes only 3 parameters: --pack(--unpack) <dir_path> <output name>.\n");
+        printf("[ERROR] Archiver takes only 3 parameters: --pack(--unpack) <source> <output>.\n");
         return 1;
     }
 
     // Checking the first argument
-    if (strcmp(flag, "--pack") != 0 && strcmp(flag, "--unpack") != 0) {
-        printf("[ERROR] Invalid argument: %s. Maybe you mean --pack or --unpack?\n", flag);
+    if (strcmp(action, "--pack") != 0 && strcmp(action, "--unpack") != 0) {
+        printf("[ERROR] Invalid argument: %s. Maybe you mean --pack or --unpack?\n", action);
         return 1;
     }
 
     // Check the source path to access
-    if (access(path, F_OK) == -1) {
-        printf("[ERROR] Couldn't %s. Source file %s doesn't exists.\n", flag + 2, path);
+    if (access(source, F_OK) == -1) {
+        printf("[ERROR] Couldn't %s. Source file %s doesn't exists.\n", action + 2, source);
         return 1;
     }
 
     // Check the output path to access
     if (access(output, F_OK) != -1) {
         // Send warning message about overwriting
-        printf("[WARNING] Couldn't %s. File %s is already exists.\n", flag + 2, output);
+        printf("[WARNING] Couldn't %s. File %s is already exists.\n", action + 2, output);
 
         // Asking the user to confirm overwriting
-        if (strcmp(flag, "--pack") == 0) {
+        if (strcmp(action, "--pack") == 0) {
             printf("          Do you want to overwrite %s output file?\n", output);
             printf("          Please enter 'y' or 'n': ");
 
@@ -65,12 +65,12 @@ int main(int argc, char** argv) {
     }
 
     // Pack or unpack depending on the flag
-    if (strcmp(flag, "--pack") == 0) {
-        pack(path, output);
+    if (strcmp(action, "--pack") == 0) {
+        pack(source, output);
     } else {
         // ...unpack
     }
 
-    printf("\n[SUCCESS] %s output file was successfully %sed.\n", output, flag + 2);
+    printf("[SUCCESS] %s output file was successfully %sed.\n", output, action + 2);
     return 0;
 }

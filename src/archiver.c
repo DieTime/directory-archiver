@@ -1,11 +1,11 @@
-#include <stdio.h>
 #include <dirent.h>
-#include <string.h>
 #include <fcntl.h>
-#include <unistd.h>
-#include <stdlib.h>
 #include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <termio.h>
+#include <unistd.h>
 
 #include "../include/archiver.h"
 
@@ -17,7 +17,13 @@ void pack(char* dir_path, char* out_path) {
         exit(1);
     }
 
+    if (write(arch, MAGIC, MAGIC_LENGTH) != MAGIC_LENGTH) {
+        printf("[ERROR] Couldn't write magic header to %s output file.\n", out_path);
+        exit(1);
+    }
+
     _pack(arch, dir_path);
+    printf("\n");
 
     // Close output archive
     if (close(arch) == -1) {
@@ -84,7 +90,7 @@ void _pack(int arch, char* dir_path) {
     }
 }
 
-void _write_info(int fd, type_name file_type, char* file_path) {
+void _write_info(int fd, name_type file_type, char* file_path) {
     // Convert to uint8_t filetype
     u8 type = (u8)file_type;
 
