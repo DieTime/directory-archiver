@@ -1,3 +1,0 @@
-D:/Study/Lab's/5 semester/OS/tar/cmake-build-debug/CMakeFiles/tar.dir
-D:/Study/Lab's/5 semester/OS/tar/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Study/Lab's/5 semester/OS/tar/cmake-build-debug/CMakeFiles/rebuild_cache.dir
