@@ -481,14 +481,20 @@ int _getch() {
 void _remove_extra_slash(char* path) {
     u64 i = 0;
     u64 renamed_len = strlen(path);
+
     while (i < renamed_len) {
         if((path[i] == '/') && (path[i + 1] == '/')) {
+            // If you find two slashes, shift all
+            // subsequent characters to the left
             for(u64 k = i + 1; k < renamed_len; k++) {
                 path[k] = path[k + 1];
             }
+
+            // Decrease length
             renamed_len -= 1;
         }
         else {
+            // Go to next character
             i += 1;
         }
     }

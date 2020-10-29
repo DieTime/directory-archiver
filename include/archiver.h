@@ -8,8 +8,10 @@
 #define u8    uint8_t
 #define u64sz sizeof(uint64_t)
 #define u8sz  sizeof(uint8_t)
+
 #define MAGIC "...DENCHIK..ARCHIVER..."
 #define MAGIC_LENGTH 24
+
 #define MAX_PATH_LENGTH 1024
 
 enum _path_type {
