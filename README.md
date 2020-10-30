@@ -10,7 +10,7 @@ Arguments:
 ### Quick start
 ```bash
 make
-archiver  --pack  <source folder path> [output archive path]
+archiver --pack  <source folder path> [output archive path]
 archiver --unpack <archive path> [output folder path]
 ```
 
