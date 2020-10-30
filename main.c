@@ -8,8 +8,8 @@ int main(int argc, char** argv) {
     // Too few arguments error
     if (argc < 3) {
         printf("[ERROR] Possible archiver arguments:\n");
-        printf("        --pack   <source folder path> <output archive path>\n");
-        printf("        --unpack <archive path> <output folder path (optional)>\n");
+        printf("        --pack   <source folder path> [output archive path]\n");
+        printf("        --unpack <archive path> [output folder path]\n");
 	return 1;
     }
 
