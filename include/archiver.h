@@ -1,4 +1,3 @@
-#pragma once
 #ifndef TAR_ARCHIVER_H
 #define TAR_ARCHIVER_H
 

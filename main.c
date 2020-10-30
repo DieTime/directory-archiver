@@ -10,6 +10,7 @@ int main(int argc, char** argv) {
         printf("[ERROR] Possible archiver arguments:\n");
         printf("        --pack   <source folder path> <output archive path>\n");
         printf("        --unpack <archive path> <output folder path (optional)>\n");
+	return 1;
     }
 
     // Getting arguments
@@ -23,13 +24,16 @@ int main(int argc, char** argv) {
         return 1;
     }
 
-    // If no output path set default value
     if (argc == 3) {
+        // Set default output if no output argument
         if (strcmp(action, "--pack") == 0) {
             output = "archive.tar";
         } else {
             output = "";
         }
+    } else {
+        // Get output path if args > 3
+        output = argv[3];
     }
 
     // Pack or unpack depending on the flag
