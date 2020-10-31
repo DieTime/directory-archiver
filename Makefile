@@ -1,5 +1,5 @@
 CC       = gcc
-CFLAGS   = -Wall
+CFLAGS   = -Wall -fsanitize=address
 SOURCES  = main.c src/archiver.c
 INCLUDES = include/archiver.h
 TARGET   = ./archiver
